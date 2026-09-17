@@ -1,4 +1,4 @@
-# CineScope
+# 🎞️ CineScope
 
 Hey there! Welcome to **CineScope** — a fun little project I built to help people find and explore their favorite TV shows and movies. You can search for shows, check out their ratings, see when they premiered, and read a quick summary of what they're about. 
 
