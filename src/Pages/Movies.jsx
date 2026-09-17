@@ -30,7 +30,7 @@ const Movies = () => {
     }, [searchTerm]);
 
     return (
-        <div className='m-4 pb-25 p-2 lg:px-20'>
+        <div className='mt-4 pb-10 px-4'>
             <title>Movies</title>
             
             <div className='flex justify-center mt-1 mb-6'>
