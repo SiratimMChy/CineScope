@@ -1,16 +1,30 @@
-# React + Vite
+# CineScope
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Hey there! Welcome to **CineScope** — a fun little project I built to help people find and explore their favorite TV shows and movies. You can search for shows, check out their ratings, see when they premiered, and read a quick summary of what they're about. 
 
-Currently, two official plugins are available:
+**Live Demo:** [https://cine-scope-bice-six.vercel.app](https://cine-scope-bice-six.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### What you can do here:
+- **Browse:** See a list of the most recently added or popular TV shows right on the home page.
+- **Search:** Looking for something specific? Just type the name in the search bar and get instant results.
+- **View Details:** Click on any movie card to open up a modal that shows you the full poster, rating, genres, and a quick summary of the plot.
 
-## React Compiler
+### How it's built (Tech Stack):
+I tried to keep things modern and fast, so here's what I used under the hood:
+- **React & Vite** for the core frontend setup.
+- **Tailwind CSS (v4)** and **DaisyUI** for styling (makes creating components super easy!).
+- **Framer Motion** (`motion/react`) for those smooth hover and entrance animations.
+- **React Router** to handle the navigation between pages.
+- **React Icons** for the little visual details.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Where is the data coming from?
+All the movie and TV show data comes from the awesome (and free!) [TVMaze API](https://www.tvmaze.com/api).
 
-## Expanding the ESLint configuration
+Specifically, I used these two endpoints:
+- `GET https://api.tvmaze.com/shows` 
+  *(This fetches the default list of shows you see when you first load the page)*
+- `GET https://api.tvmaze.com/search/shows?q=:query` 
+  *(This handles the live search functionality whenever you type in a movie name)*
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+Feel free to poke around the code or try out the live site!
